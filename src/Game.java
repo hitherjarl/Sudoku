@@ -2,8 +2,6 @@ import java.util.*;
 public class Game {
 	static int[][] createBoard(int[][] board){
 		//instantialize a random method
-		int row = 0;
-		int col = 0;
 		int k=1,n=1;
 		//loops to populate the board
 		for(int i = 0; i<board.length;i++) {
@@ -108,12 +106,8 @@ public class Game {
 			System.out.println("input the value between 1 - 9");
 			int val = in.nextInt();
 			System.out.println(val);
-			validate(board, xCoor, yCoor, val);
-			
-			
-			
-		}
-		
+			validate(board, xCoor, yCoor, val);	
+		}	
 		System.out.println("Sudoku Solved!");
 		return;
 		
